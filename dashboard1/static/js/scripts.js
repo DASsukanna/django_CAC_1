@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     let eventAttendanceData = {
-        labels: ["Event 1", "Event 2", "Event 3", "Event 4", "Event 5"],
+        labels: ["All-Go Rhythm", "Imperio 2024", " Gladiators 2024", "Alumni Meet", "Darpan 2024"],
         datasets: [{
             label: 'Attendance',
             data: [50, 75, 60, 90, 80],
@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     let memberSkillsData = {
-        labels: ["Skill 1", "Skill 2", "Skill 3", "Skill 4", "Skill 5"],
+        labels: ["Varsity Game Club", "Radio Club", "SWO", "Trekking Club", "Writer's Club"],
         datasets: [{
-            label: 'Member Skills',
+            label: 'Clubs',
             data: [80, 60, 45, 70, 90],
             fill: true,
             backgroundColor: 'rgba(255, 206, 86, 0.7)',
@@ -85,7 +85,37 @@ document.addEventListener("DOMContentLoaded", function () {
     drawMemberSkillsChart(memberSkillsData);
 });
 
-function simulateEvent() {
+function addClub() {
+    // Simulate adding new members after an event
+    let newMembersGrowthData = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+            label: 'New Members Growth',
+            data: [10, 15, 20, 25, 30, 35],
+            fill: false,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            tension: 0.4
+        }]
+    };
+    drawNewMembersGrowthChart(newMembersGrowthData);
+}
+
+function removeClub() {
+    // Simulate adding new members after an event
+    let newMembersGrowthData = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+            label: 'New Members Growth',
+            data: [10, 15, 20, 25, 30, 35],
+            fill: false,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            tension: 0.4
+        }]
+    };
+    drawNewMembersGrowthChart(newMembersGrowthData);
+}
+
+function updateClubDetaisl() {
     // Simulate adding new members after an event
     let newMembersGrowthData = {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
