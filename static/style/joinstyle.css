@@ -116,7 +116,14 @@ form .work .category{
 #w6:checked ~ .category label .six,
 #w7:checked ~ .category label .seven,
 #w8:checked ~ .category label .eight,
-#w9:checked ~ .category label .nine{
+#w9:checked ~ .category label .nine,
+#w10:checked ~ .category label .ten,
+#w11:checked ~ .category label .eleven,
+#w12:checked ~ .category label .twelve,
+#w13:checked ~ .category label .thirteen,
+#w14:checked ~ .category label .fourteen,
+#w15:checked ~ .category label .fifteen
+{
     border-color: blue;
     background: white;
 }
