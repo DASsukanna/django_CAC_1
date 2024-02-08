@@ -30,14 +30,13 @@
 
         <div class="container">
             <div class="navbar">
-                <hr>ABOUT US </hr>
+               
                 <div class="logo">
                     <img src="{% static 'image/logo.png' %}" alt="GeeksforGeeks LPU Chapter" width="75px" height="75px">
                 </div>
                 <nav>
                     <ul>
                         <li><a href="{% url 'home' %}">Home</a></li>
-                        
                         <li><a href="{% url 'aboutus' %}">About</a></li>
                         <li><a href="{% url 'contactus' %}">Contact</a></li>
                         <li><a href="{% url 'dashboard1' %}">DASHBOARD</a></li>
@@ -80,21 +79,21 @@
             </div>
             <br>
             <div class="flexbox1">
-                <img id="pic" src="Parul.jpg" alt="Parul">
+                <img id="pic" src="{% static 'image/parul.jpg' %}" alt="Parul">
                 <h2 class="head1">Parul Sharma</h2>
                 <p class="a"></p>
                 <br>
-                <form action="https://lavasa.christuniversity.in/">
+                <form action="https://www.linkedin.com/in/parul-sharma-8908a6191/">
                     <button class="button"><span>Connect </span></button>
                 </form>
             </div>
             <br>
             <div class="flexbox1">
-                <img id="pic" src="Sukanna.jpg" alt="Sukanna">
+                <img id="pic" src="{% static 'image/sukanna.jpg' %}" alt="Sukanna">
                 <h2 class="head1">Sukanna Das</h2>
                 <p class="a"></p>
                 <br>
-                <form action="https://lavasa.christuniversity.in/">
+                <form action="https://www.linkedin.com/in/sukanna-das-170049216/">
                     <button class="button"><span>Connect</span></button>
                 </form>
             </div>
