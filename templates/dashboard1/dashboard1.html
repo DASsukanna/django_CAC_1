@@ -10,6 +10,61 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Link to your custom styles -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .modal-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal {
+            position: relative;
+            padding: 20px;
+            background-color: #292929;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #444;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,7 +80,7 @@
                 <h2>Total Members</h2>
             </div>
             <div class="card-body">
-                <h3 id="totalMembers">500</h3>
+                <h2 id="totalMembers">50</h2>
             </div>
         </div>
 
@@ -72,7 +127,7 @@
         <!-- Card 6: Member Skills -->
         <div class="card">
             <div class="card-header">
-                <h2>Member Skills</h2>
+                <h2>Clubs</h2>
             </div>
             <div class="card-body chart-container">
                 <canvas id="memberSkillsChart"></canvas>
@@ -81,7 +136,99 @@
     </div>
 
     <div class="button-container">
-        <button onclick="simulateEvent()">Simulate Event</button>
+        <button class="add-club" onclick="openAddClubForm()">Add Club</button>
+<button class="remove-club" onclick="openRemoveClubForm()">Remove Club</button>
+<button class="update-club" onclick="openUpdateClubForm()">Update Club Details</button>
+
+<div id="addClubModalContainer" class="modal-container">
+    <div id="addClubModal" class="modal">
+        <form>
+            <h2 style="color: #007bff;">Add Club Form</h2>
+
+            <label for="clubName">Club Name:</label>
+            <input type="text" id="clubName" name="clubName" required>
+
+            <label for="clubDetails">Club Details:</label>
+            <input type="text" id="clubDetails" name="clubDetails" required>
+
+            <label for="clubType">Club Type:</label>
+            <input type="text" id="clubType" name="clubType" required>
+
+            <label for="meetingSchedule">Meeting Schedule:</label>
+            <input type="text" id="meetingSchedule" name="meetingSchedule" required>
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Submit</button>
+            <button type="button" onclick="closeAddClubForm()">Close</button>
+        </form>
+    </div>
+</div>
+
+<div id="removeClubModalContainer" class="modal-container">
+    <div id="removeClubModal" class="modal">
+        <form>
+            <h2 style="color: #dc3545;">Remove Club Form</h2>
+
+            <label for="clubNameToRemove">Club Name:</label>
+            <input type="text" id="clubNameToRemove" name="clubNameToRemove" required>
+
+            <label for="reason">Reason for Removal:</label>
+            <input type="text" id="reason" name="reason" required>
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Submit</button>
+            <button type="button" onclick="closeRemoveClubForm()">Close</button>
+        </form>
+    </div>
+</div>
+
+<div id="updateClubModalContainer" class="modal-container">
+    <div id="updateClubModal" class="modal">
+        <form>
+            <h2 style="color: #28a745;">Update Club Details Form</h2>
+
+            <label for="clubNameToUpdate">Club Name:</label>
+            <input type="text" id="clubNameToUpdate" name="clubNameToUpdate" required>
+
+            <label for="updatedDetails">Updated Details:</label>
+            <input type="text" id="updatedDetails" name="updatedDetails" required>
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Submit</button>
+            <button type="button" onclick="closeUpdateClubForm()">Close</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openAddClubForm() {
+        document.getElementById("addClubModalContainer").style.display = "flex";
+    }
+
+    function closeAddClubForm() {
+        document.getElementById("addClubModalContainer").style.display = "none";
+    }
+
+    function openRemoveClubForm() {
+        document.getElementById("removeClubModalContainer").style.display = "flex";
+    }
+
+    function closeRemoveClubForm() {
+        document.getElementById("removeClubModalContainer").style.display = "none";
+    }
+
+    function openUpdateClubForm() {
+        document.getElementById("updateClubModalContainer").style.display = "flex";
+    }
+
+    function closeUpdateClubForm() {
+        document.getElementById("updateClubModalContainer").style.display = "none";
+    }
+</script>
+
     </div>
 </div>
 
