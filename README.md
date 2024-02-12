@@ -82,7 +82,7 @@ After completing these steps, access the application in your browser and navigat
 
 4) **Dashboard**
 
-![]("readmeImages/dashboard.png")
+![](readmeImages/dashboard.png)
 
 
 ![](readmeImages/dashboard2.png)
