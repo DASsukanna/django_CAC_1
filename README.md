@@ -67,25 +67,25 @@ After completing these steps, access the application in your browser and navigat
 
 1) **Homepage: Displaying upcoming events**
 
-![](readmeImages\homepage.png)
+![](readmeImages/homepage.png)
 
 
-![](readmeImages\homepage2.png)
+![](readmeImages/homepage2.png)
 
 2) **Join Us Page**
 
-![](readmeImages\joinpage.png)
+![](readmeImages/joinpage.png)
 
 3) **Help**
 
-![](readmeImages\helppage.png)
+![](readmeImages/helppage.png)
 
 4) **Dashboard**
 
-![](readmeImages\dashboard.png)
+![]("readmeImages/dashboard.png")
 
 
-![](readmeImages\dashboard2.png)
+![](readmeImages/dashboard2.png)
    
 ## **GROUP MEMBERS:**
 
