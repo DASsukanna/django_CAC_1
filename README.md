@@ -4,7 +4,7 @@
 
 Welcome to the Club Management App! This application is designed to help clubs efficiently manage their members, events, and overall activities.
 
-The **Club Management Project** is a web application built with Django, tailored for efficiently managing a club's members, events, and generating insightful statistics. This project offers a user-friendly interface to handle member details, track event participation, and visualize club data through an interactive dashboard.
+The **Club Management Project** is a web application built with Django, tailored for efficiently managing a club's members, events, and generating insightful statistics. This project offers a user-friendly interface to handle member details, and visualize club data through an interactive dashboard.
 
 ## Features
 
@@ -48,6 +48,44 @@ After completing these steps, access the application in your browser and navigat
 - **Member Management:** Use the admin panel to add and manage club members.
 - **Event Management:** Organize and track events through the admin panel.
 - **Dashboard:** Explore and analyze club data by visiting the dashboard.
+
+## Functionalities
+
+1. **Add:**
+   - Allows administrators or authorized users to add new clubs, members, events, or other relevant entities to the system.
+
+2. **Update:**
+   - Enables users to modify existing information for clubs, members, events, or other data entries in the system.
+
+3. **Delete:**
+   - Permits authorized users to remove clubs, members, events, or other records from the system.
+
+4. **Join:**
+   - Allows clubs to join or register to the system.
+
+## Images for Usage
+
+1) **Homepage: Displaying upcoming events**
+
+![](readmeImages\homepage.png)
+
+
+![](readmeImages\homepage2.png)
+
+2) **Join Us Page**
+
+![](readmeImages\joinpage.png)
+
+3) **Help**
+
+![](readmeImages\helppage.png)
+
+4) **Dashboard**
+
+![](readmeImages\dashboard.png)
+
+
+![](readmeImages\dashboard2.png)
    
 ## **GROUP MEMBERS:**
 
@@ -62,3 +100,5 @@ After completing these steps, access the application in your browser and navigat
 **3) Sukanna Das (23122039)**
 
 **Email: sukanna.das@msds.christuniversity.in**
+
+

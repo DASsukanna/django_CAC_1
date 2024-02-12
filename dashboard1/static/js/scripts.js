@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     // Initial dummy data
-    let totalMembersData = 500;
+    let totalMembersData = 35;
     let newMembersGrowthData = {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
         datasets: [{
