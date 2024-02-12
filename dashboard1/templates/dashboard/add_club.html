@@ -1,0 +1,6 @@
+
+<form method="post" action="{% url 'add_club' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>

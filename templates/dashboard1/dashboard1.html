@@ -137,100 +137,119 @@
 
     <div class="button-container">
         <button class="add-club" onclick="openAddClubForm()">Add Club</button>
-<button class="remove-club" onclick="openRemoveClubForm()">Remove Club</button>
-<button class="update-club" onclick="openUpdateClubForm()">Update Club Details</button>
+        <button class="remove-club" onclick="openRemoveClubForm()">Remove Club</button>
+        <button class="update-club" onclick="openUpdateClubForm()">Update Club Details</button>
 
-<div id="addClubModalContainer" class="modal-container">
-    <div id="addClubModal" class="modal">
-        <form>
-            <h2 style="color: #007bff;">Add Club Form</h2>
+            <div id="addClubModalContainer" class="modal-container">
+                <div id="addClubModal" class="modal">
+                    <form>
+                        <h2 style="color: #007bff;">Add Club Form</h2>
 
-            <label for="clubName">Club Name:</label>
-            <input type="text" id="clubName" name="clubName" required>
+                        <label for="clubName">Club Name:</label>
+                        <input type="text" id="clubName" name="clubName" required>
 
-            <label for="clubDetails">Club Details:</label>
-            <input type="text" id="clubDetails" name="clubDetails" required>
+                        <label for="clubDetails">Club Details:</label>
+                        <input type="text" id="clubDetails" name="clubDetails" required>
 
-            <label for="clubType">Club Type:</label>
-            <input type="text" id="clubType" name="clubType" required>
+                        <label for="clubType">Club Type:</label>
+                        <input type="text" id="clubType" name="clubType" required>
 
-            <label for="meetingSchedule">Meeting Schedule:</label>
-            <input type="text" id="meetingSchedule" name="meetingSchedule" required>
+                        <label for="meetingSchedule">Meeting Schedule:</label>
+                        <input type="text" id="meetingSchedule" name="meetingSchedule" required>
 
-            <!-- Add more fields as needed -->
+                        <!-- Add more fields as needed -->
 
-            <button type="submit">Submit</button>
-            <button type="button" onclick="closeAddClubForm()">Close</button>
-        </form>
-    </div>
-</div>
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="closeAddClubForm()">Close</button>
+                    </form>
+                </div>
+            </div>
 
-<div id="removeClubModalContainer" class="modal-container">
-    <div id="removeClubModal" class="modal">
-        <form>
-            <h2 style="color: #dc3545;">Remove Club Form</h2>
+            <div id="removeClubModalContainer" class="modal-container">
+                <div id="removeClubModal" class="modal">
+                    <form>
+                        <h2 style="color: #dc3545;">Remove Club Form</h2>
 
-            <label for="clubNameToRemove">Club Name:</label>
-            <input type="text" id="clubNameToRemove" name="clubNameToRemove" required>
+                        <label for="clubNameToRemove">Club Name:</label>
+                        <input type="text" id="clubNameToRemove" name="clubNameToRemove" required>
 
-            <label for="reason">Reason for Removal:</label>
-            <input type="text" id="reason" name="reason" required>
+                        <label for="reason">Reason for Removal:</label>
+                        <input type="text" id="reason" name="reason" required>
 
-            <!-- Add more fields as needed -->
+                        <!-- Add more fields as needed -->
 
-            <button type="submit">Submit</button>
-            <button type="button" onclick="closeRemoveClubForm()">Close</button>
-        </form>
-    </div>
-</div>
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="closeRemoveClubForm()">Close</button>
+                    </form>
+                </div>
+            </div>
 
-<div id="updateClubModalContainer" class="modal-container">
-    <div id="updateClubModal" class="modal">
-        <form>
-            <h2 style="color: #28a745;">Update Club Details Form</h2>
+            <div id="updateClubModalContainer" class="modal-container">
+                <div id="updateClubModal" class="modal">
+                    <form>
+                        <h2 style="color: #28a745;">Update Club Details Form</h2>
 
-            <label for="clubNameToUpdate">Club Name:</label>
-            <input type="text" id="clubNameToUpdate" name="clubNameToUpdate" required>
+                        <label for="clubNameToUpdate">Club Name:</label>
+                        <input type="text" id="clubNameToUpdate" name="clubNameToUpdate" required>
 
-            <label for="updatedDetails">Updated Details:</label>
-            <input type="text" id="updatedDetails" name="updatedDetails" required>
+                        <label for="updatedDetails">Updated Details:</label>
+                        <input type="text" id="updatedDetails" name="updatedDetails" required>
 
-            <!-- Add more fields as needed -->
+                        <!-- Add more fields as needed -->
 
-            <button type="submit">Submit</button>
-            <button type="button" onclick="closeUpdateClubForm()">Close</button>
-        </form>
-    </div>
-</div>
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="closeUpdateClubForm()">Close</button>
+                    </form>
+                </div>
+            </div>
 
-<script>
-    function openAddClubForm() {
-        document.getElementById("addClubModalContainer").style.display = "flex";
-    }
+            <div id="updateClubModalContainer" class="modal-container">
+                <div id="updateClubModal" class="modal">
+                    <form>
+                        <h2 style="color: #28a745;">Update Club Details Form</h2>
 
-    function closeAddClubForm() {
-        document.getElementById("addClubModalContainer").style.display = "none";
-    }
+                        <label for="clubNameToUpdate">Club Name:</label>
+                        <input type="text" id="clubNameToUpdate" name="clubNameToUpdate" required>
 
-    function openRemoveClubForm() {
-        document.getElementById("removeClubModalContainer").style.display = "flex";
-    }
+                        <label for="updatedDetails">Updated Details:</label>
+                        <input type="text" id="updatedDetails" name="updatedDetails" required>
 
-    function closeRemoveClubForm() {
-        document.getElementById("removeClubModalContainer").style.display = "none";
-    }
+                        <!-- Add more fields as needed -->
 
-    function openUpdateClubForm() {
-        document.getElementById("updateClubModalContainer").style.display = "flex";
-    }
+                        <button type="submit">Submit</button>
+                        <button type="button" onclick="closeUpdateClubForm()">Close</button>
+                    </form>
+                </div>
+            </div>
 
-    function closeUpdateClubForm() {
-        document.getElementById("updateClubModalContainer").style.display = "none";
-    }
-</script>
+            <script>
+                function openAddClubForm() {
+                    document.getElementById("addClubModalContainer").style.display = "flex";
+                }
 
-    </div>
-</div>
+                function closeAddClubForm() {
+                    document.getElementById("addClubModalContainer").style.display = "none";
+                }
+
+                function openRemoveClubForm() {
+                    document.getElementById("removeClubModalContainer").style.display = "flex";
+                }
+
+                function closeRemoveClubForm() {
+                    document.getElementById("removeClubModalContainer").style.display = "none";
+                }
+
+                function openUpdateClubForm() {
+                    document.getElementById("updateClubModalContainer").style.display = "flex";
+                }
+
+                function closeUpdateClubForm() {
+                    document.getElementById("updateClubModalContainer").style.display = "none";
+                }
+            </script>
+
+                </div>
+            </div>
 
 <!-- Include your custom JavaScript file -->
 <script src="{% static 'js/scripts.js' %}"></script>
